@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/fondo"
+  tools:context=".MenuActivity">
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:gravity="center|top"
+      android:orientation="vertical">
+
+      <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+          android:id="@+id/lblBienvenida"
+          android:layout_width="208dp"
+          android:layout_height="wrap_content"
+          android:fontFamily="@font/inknut_antiqua_light"
+          android:gravity="center"
+          android:text="@string/lblBienvenida"
+          android:textColor="@color/white"
+          android:textSize="24sp" />
+
+        <TextView
+          android:id="@+id/lblNombreUsuarioRegistrado"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:fontFamily="@font/inknut_antiqua_light"
+          android:text=""
+          android:textColor="@color/white"
+          android:textSize="24sp" />
+
+
+      </LinearLayout>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/lblDniSesion"
+          android:fontFamily="@font/inknut_antiqua_light"
+          android:textSize="28sp"
+          android:padding="5dp"
+          android:textColor="@color/white"
+          />
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/lblNombresSesion"
+          android:fontFamily="@font/inknut_antiqua_light"
+          android:textSize="28sp"
+          android:padding="5dp"
+          android:textColor="@color/white"
+          />
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/lblEdadSesion"
+          android:fontFamily="@font/inknut_antiqua_light"
+          android:textSize="28sp"
+          android:padding="5dp"
+          android:textColor="@color/white"
+          />
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/lblCorreoSesion"
+          android:fontFamily="@font/inknut_antiqua_light"
+          android:textSize="28sp"
+          android:padding="5dp"
+          android:textColor="@color/white"
+          />
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/lblTelefonoSesion"
+          android:fontFamily="@font/inknut_antiqua_light"
+          android:textSize="28sp"
+          android:padding="5dp"
+          android:textColor="@color/white"
+          />
+      </LinearLayout>
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:gravity="center"
+          android:padding="5dp">
+          <Button
+            android:id="@+id/btnSaliSesion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:width="80dp"
+            android:height="25dp"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="@font/inknut_antiqua_light"
+            android:maxWidth="80dp"
+            android:onClick="Salir"
+            android:text="@string/btnSalirSesion"
+            android:textSize="10sp" />
+          <Button
+            android:id="@+id/btnEliminarCuenta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:width="80dp"
+            android:height="25dp"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="@font/inknut_antiqua_light"
+            android:maxWidth="80dp"
+            android:onClick="Eliminar"
+            android:text="@string/btnEliminarCuenta"
+            android:textSize="10sp" />
+        </LinearLayout>
+
+      </LinearLayout>
+    </LinearLayout>
+  </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    android:isScrollContainer="true"
+    tools:context=".FormularioRegistro">
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      tools:ignore="MissingConstraints">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+      <TextView
+          android:id="@+id/lblRegistro"
+          android:layout_width="254dp"
+          android:layout_height="89dp"
+          android:fontFamily="@font/inknut_antiqua_light"
+          android:text="@string/lblRegistro"
+          android:textAlignment="center"
+          android:textColor="#FFFFFF"
+          android:textSize="20sp"
+          android:textStyle="bold"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.496"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.024" />
+
+      <TableLayout
+          android:id="@+id/tableLayout"
+          android:layout_width="388dp"
+          android:layout_height="454dp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.478"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/lblRegistro"
+          app:layout_constraintVertical_bias="0.057">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+          <TextView
+              android:id="@+id/lblDni"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:width="140dp"
+              android:height="36dp"
+              android:fontFamily="@font/inknut_antiqua_light"
+              android:gravity="center|start"
+              android:text="@string/lblDni"
+              android:textColor="#FBFBFB"
+              android:textSize="14sp"
+              android:textStyle="bold" />
+
+          <EditText
+              android:id="@+id/txtDni"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:width="200dp"
+              android:height="36dp"
+              android:backgroundTint="#000000"
+              android:ems="10"
+              android:fontFamily="@font/inknut_antiqua_light"
+              android:inputType="text"
+              android:textColorHint="#040404"
+              android:textSize="14sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+          <TextView
+              android:id="@+id/lblNombres"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:width="140dp"
+              android:height="36dp"
+              android:fontFamily="@font/inknut_antiqua_light"
+              android:gravity="center|start"
+              android:text="@string/lblNombres"
+              android:textColor="#FBFBFB"
+              android:textSize="14sp"
+              android:textStyle="bold" />
+
+          <EditText
+              android:id="@+id/txtNombres"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:width="200dp"
+              android:height="36dp"
+              android:backgroundTint="#000000"
+              android:ems="10"
+              android:fontFamily="@font/inknut_antiqua_light"
+              android:inputType="text"
+              android:textColorHint="#040404"
+              android:textSize="14sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+          <TextView
+              android:id="@+id/lblApellidos"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:width="140dp"
+              android:height="36dp"
+              android:fontFamily="@font/inknut_antiqua_light"
+              android:gravity="center|start"
+              android:text="@string/lblApellidos"
+              android:textColor="#FBFBFB"
+              android:textSize="14sp"
+              android:textStyle="bold" />
+
+          <EditText
+              android:id="@+id/txtApellidos"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:width="200dp"
+              android:height="36dp"
+              android:backgroundTint="#000000"
+              android:ems="10"
+              android:fontFamily="@font/inknut_antiqua_light"
+              android:inputType="text"
+              android:textColorHint="#040404"
+              android:textSize="14sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+          <TextView
+              android:id="@+id/lblNombreUsuario"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:width="140dp"
+              android:height="36dp"
+              android:fontFamily="@font/inknut_antiqua_light"
+              android:gravity="center|start"
+              android:text="@string/lblNombreUsuario"
+              android:textColor="#FBFBFB"
+              android:textSize="14sp"
+              android:textStyle="bold" />
+
+          <EditText
+              android:id="@+id/txtNombreUsuarioRegistro"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:width="200dp"
+              android:height="36dp"
+              android:backgroundTint="#000000"
+              android:ems="10"
+              android:fontFamily="@font/inknut_antiqua_light"
+              android:inputType="text"
+              android:textColorHint="#040404"
+              android:textSize="14sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+          <TextView
+              android:id="@+id/lblContrasenia"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:width="140dp"
+              android:height="36dp"
+              android:fontFamily="@font/inknut_antiqua_light"
+              android:gravity="center|start"
+              android:text="@string/lblContrasenia"
+              android:textColor="#FBFBFB"
+              android:textSize="14sp"
+              android:textStyle="bold" />
+
+          <EditText
+              android:id="@+id/txtContrasenia"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:width="200dp"
+              android:height="36dp"
+              android:backgroundTint="#000000"
+              android:ems="10"
+              android:fontFamily="@font/inknut_antiqua_light"
+              android:inputType="textPassword"
+              android:textColorHint="#040404"
+              android:textSize="14sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+          <TextView
+              android:id="@+id/lblEdad"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:width="140dp"
+              android:height="36dp"
+              android:fontFamily="@font/inknut_antiqua_light"
+              android:gravity="center|start"
+              android:text="@string/lblEdad"
+              android:textColor="#FBFBFB"
+              android:textSize="14sp"
+              android:textStyle="bold" />
+
+          <EditText
+              android:id="@+id/txtEdad"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:width="200dp"
+              android:height="36dp"
+              android:backgroundTint="#000000"
+              android:ems="10"
+              android:fontFamily="@font/inknut_antiqua_light"
+              android:inputType="number"
+              android:textColorHint="#040404"
+              android:textSize="14sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+          <TextView
+              android:id="@+id/lblCorreo"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:width="140dp"
+              android:height="36dp"
+              android:fontFamily="@font/inknut_antiqua_light"
+              android:gravity="center|start"
+              android:text="@string/lblCorreo"
+              android:textColor="#FBFBFB"
+              android:textSize="14sp"
+              android:textStyle="bold" />
+
+          <EditText
+              android:id="@+id/txtCorreo"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:width="200dp"
+              android:height="36dp"
+              android:backgroundTint="#000000"
+              android:ems="10"
+              android:fontFamily="@font/inknut_antiqua_light"
+              android:inputType="text"
+              android:textColorHint="#040404"
+              android:textSize="14sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+          <TextView
+              android:id="@+id/lblCelular"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:width="140dp"
+              android:height="36dp"
+              android:fontFamily="@font/inknut_antiqua_light"
+              android:gravity="center|start"
+              android:text="@string/lblCelular"
+              android:textColor="#FBFBFB"
+              android:textSize="14sp"
+              android:textStyle="bold" />
+
+          <EditText
+              android:id="@+id/txtCelular"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:width="200dp"
+              android:height="36dp"
+              android:backgroundTint="#000000"
+              android:ems="10"
+              android:fontFamily="@font/inknut_antiqua_light"
+              android:inputType="number"
+              android:textColorHint="#040404"
+              android:textSize="14sp" />
+
+        </TableRow>
+
+      </TableLayout>
+
+      <LinearLayout
+          android:layout_width="315dp"
+          android:layout_height="131dp"
+          android:gravity="center"
+          android:orientation="vertical"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/tableLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+          <Button
+              android:id="@+id/btnRegistrarse"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginRight="10dp"
+              android:layout_weight="1"
+              android:width="80dp"
+              android:height="25dp"
+              android:background="@drawable/rounded_button"
+              android:fontFamily="@font/inknut_antiqua_light"
+              android:maxWidth="80dp"
+              android:onClick="Registrar"
+              android:text="Registrarse"
+              android:textSize="10sp" />
+
+          <Button
+              android:id="@+id/btnLimpiar"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:width="80dp"
+              android:height="25dp"
+              android:background="@drawable/rounded_button"
+              android:fontFamily="@font/inknut_antiqua_light"
+              android:maxWidth="80dp"
+              android:onClick="Limpiar"
+              android:text="Limpiar"
+              android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+          <Button
+              android:id="@+id/btnVolver"
+              android:layout_width="182dp"
+              android:layout_height="wrap_content"
+              android:width="80dp"
+              android:height="25dp"
+              android:background="@drawable/rounded_button"
+              android:fontFamily="@font/inknut_antiqua_light"
+              android:gravity="center"
+              android:maxWidth="80dp"
+              android:onClick="Volver"
+              android:text="Volver"
+              android:textSize="10sp" />
+        </LinearLayout>
+
+      </LinearLayout>
+    </LinearLayout>
+  </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

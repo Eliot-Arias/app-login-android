@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">LoginUsuario</string>
+    <string name="title_activity_respuesta">Respuesta</string>
+
+    <string name="lblTitulo">INICIO DE SESIÓN</string>
+    <string name="lblMsg">Para Continuar inicie sesión o regístrese</string>
+    <string name="btnViewRegistrarse">Registrarse</string>
+    <string name="btnViewIniciarSesion">Iniciar Sesión</string>
+
+    <string name="lblInicioSesion">INICIO DE SESIÓN</string>
+
+
+    <string name="lblRegistro">REGISTRO DE USUARIOS</string>
+    <string name="lblDni">DNI:</string>
+    <string name="lblNombres">Nombres:</string>
+    <string name="lblApellidos">Apellidos:</string>
+    <string name="lblNombreUsuario">Nombre Usuario:</string>
+    <string name="lblContrasenia">Contraseña:</string>
+    <string name="lblEdad">Edad:</string>
+    <string name="lblCorreo">Correo:</string>
+    <string name="lblCelular">Celular</string>
+
+    <string name="lblBienvenida">Bienvenido</string>
+    <string name="lblNombreUsuarioRegistrado"></string>
+    <string name="lblDniSesion"></string>
+    <string name="lblNombresSesion"></string>
+    <string name="lblEdadSesion"></string>
+    <string name="lblCorreoSesion"></string>
+    <string name="lblTelefonoSesion"></string>
+    <string name="btnSalirSesion">Cerrar Sesion</string>
+    <string name="btnEliminarCuenta">Eliminar Cuenta</string>
+
+
+
+</resources>
